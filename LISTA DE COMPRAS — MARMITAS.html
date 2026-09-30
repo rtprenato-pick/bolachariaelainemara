@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras — Marmitas</title>
+    <style>
+        :root {
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+            --border-color: #e2e8f0;
+            --accent-color: #22c55e;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border-color);
+            color: #1e293b;
+        }
+
+        .category {
+            margin-bottom: 24px;
+        }
+
+        .category-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #0f172a;
+        }
+
+        .item-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            border-radius: 8px;
+            transition: background 0.2s;
+            cursor: pointer;
+            margin-bottom: 4px;
+        }
+
+        .item:hover {
+            background-color: #f8fafc;
+        }
+
+        .item input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #cbd5e1;
+            border-radius: 6px;
+            margin-right: 12px;
+            outline: none;
+            cursor: pointer;
+            display: grid;
+            place-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .item input[type="checkbox"]::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+            box-shadow: inset 1em 1em var(--accent-color);
+            transform-origin: bottom left;
+            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        }
+
+        .item input[type="checkbox"]:checked {
+            border-color: var(--accent-color);
+            background-color: #f0fdf4;
+        }
+
+        .item input[type="checkbox"]:checked::before {
+            transform: scale(1);
+        }
+
+        .item input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+            color: #94a3b8;
+        }
+
+        .item label {
+            cursor: pointer;
+            font-size: 0.95rem;
+            flex-grow: 1;
+            user-select: none;
+        }
+
+        .note {
+            font-size: 0.85rem;
+            color: #64748b;
+            font-weight: normal;
+            margin-left: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>LISTA DE COMPRAS — MARMITAS</h1>
+
+    <!-- AÇOUGUE -->
+    <div class="category">
+        <div class="category-title">🥩 Açougue</div>
+        <ul class="item-list">
+            <li class="item"><input type="checkbox" id="ac1"><label for="ac1">3 kg de carne moída</label></li>
+            <li class="item"><input type="checkbox" id="ac2"><label for="ac2">2 kg de acém</label></li>
+            <li class="item"><input type="checkbox" id="ac3"><label for="ac3">2 kg de peito de frango</label></li>
+            <li class="item"><input type="checkbox" id="ac4"><label for="ac4">3 kg de sobrecoxa</label></li>
+            <li class="item"><input type="checkbox" id="ac5"><label for="ac5">1,5 kg de pernil suíno sem osso</label></li>
+        </ul>
+    </div>
+
+    <!-- HORTIFRUTI -->
+    <div class="category">
+        <div class="category-title">🥕 Hortifruti</div>
+        <ul class="item-list">
+            <li class="item"><input type="checkbox" id="hf1"><label for="hf1">2 pacotes de mandioca</label></li>
+            <li class="item"><input type="checkbox" id="hf2"><label for="hf2">4 cenouras grandes</label></li>
+            <li class="item"><input type="checkbox" id="hf3"><label for="hf3">6 pimentões coloridos <span class="note">(2 vermelhos, 2 amarelos e 2 verdes)</span></label></li>
+            <li class="item"><input type="checkbox" id="hf4"><label for="hf4">8 cebolas grandes</label></li>
+            <li class="item"><input type="checkbox" id="hf5"><label for="hf5">3 cabeças de alho</label></li>
+            <li class="item"><input type="checkbox" id="hf6"><label for="hf6">2 maços de cheiro-verde <span class="note">(2 salsinhas, 2 cebolinhas)</span></label></li>
+            <li class="item"><input type="checkbox" id="hf7"><label for="hf7">2 manjericão fresco</label></li>
+        </ul>
+    </div>
+
+    <!-- MERCEARIA -->
+    <div class="category">
+        <div class="category-title">🥫 Mercearia</div>
+        <ul class="item-list">
+            <li class="item"><input type="checkbox" id="mc1"><label for="mc1">4 sachês de molho de tomate</label></li>
+            <li class="item"><input type="checkbox" id="mc2"><label for="mc2">3 caixinhas de creme de leite <span class="note">(qualquer um)</span></label></li>
+            <li class="item"><input type="checkbox" id="mc3"><label for="mc3">2 embalagens pequenas de extrato de tomate Elefante</label></li>
+        </ul>
+    </div>
+
+    <!-- TEMPEROS -->
+    <div class="category">
+        <div class="category-title">🧂 Temperos <span class="note">(Loja de produtos naturais)</span></div>
+        <ul class="item-list">
+            <li class="item"><input type="checkbox" id="tp1"><label for="tp1">50g - Pimenta-calabresa</label></li>
+            <li class="item"><input type="checkbox" id="tp2"><label for="tp2">50g - Páprica picante</label></li>
+            <li class="item"><input type="checkbox" id="tp3"><label for="tp3">50g - Páprica defumada</label></li>
+            <li class="item"><input type="checkbox" id="tp4"><label for="tp4">50g - Páprica doce</label></li>
+            <li class="item"><input type="checkbox" id="tp5"><label for="tp5">50g - Tempero de alho e cebola com ervas <span class="note">(tudo junto)</span></label></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
