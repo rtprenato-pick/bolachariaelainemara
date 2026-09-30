@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giassi Supermercados - Painel de Ofertas da Lista de Marmitas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 antialiased min-h-screen">
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    
+    <!-- Header -->
+    <header class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 mb-8">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <div class="w-14 h-14 bg-red-600 rounded-xl flex items-center justify-center text-white font-extrabold text-2xl shadow-lg shadow-red-500/20">
+            G
+          </div>
+          <div>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Giassi Supermercados</h1>
+            <p class="text-slate-500 text-sm font-medium mt-0.5">Painel de Ofertas — Itens Correlacionados da Lista de Marmitas</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 self-start md:self-auto">
+          <span class="inline-flex items-center gap-1.5 bg-red-50 text-red-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-red-100">
+            <i class="fa-solid fa-tag text-xs"></i>
+            10 Ofertas Correlacionadas
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content / Cards Grid -->
+    <main>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 1. Peito de Frango Sadia -->
+        <article class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Açougue</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-0.5 rounded-md">18.59% OFF</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-1">Item da Lista: Peito de frango</p>
+            <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2">Filé de Peito de Frango Sadia</h3>
+            <p class="text-sm text-slate-500 mb-4">Bio Congelado Zip - Pacote 1kg</p>
+          </div>
+          <div class="bg-slate-50 border-t border-slate-100 p-6 flex items-baseline justify-between mt-auto">
+            <div>
+              <span class="text-xs text-slate-400 line-through block">R$ 26,90</span>
+              <span class="text-xs text-slate-500 font-medium">Preço Normal</span>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-extrabold text-red-600">R$ 21,90</span>
+              <span class="text-xs text-emerald-600 font-semibold block">Clube Amigo Giassi</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Peito Sassami Pássaro Branco -->
+        <article class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Açougue</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-0.5 rounded-md">21.83% OFF</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-1">Item da Lista: Peito de frango</p>
+            <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2">Filé de Peito Sassami Pássaro Branco</h3>
+            <p class="text-sm text-slate-500 mb-4">Congelado - Pacote 1kg</p>
+          </div>
+          <div class="bg-slate-50 border-t border-slate-100 p-6 flex items-baseline justify-between mt-auto">
+            <div>
+              <span class="text-xs text-slate-400 line-through block">R$ 22,90</span>
+              <span class="text-xs text-slate-500 font-medium">Preço Normal</span>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-extrabold text-red-600">R$ 17,90</span>
+              <span class="text-xs text-emerald-600 font-semibold block">Clube Amigo Giassi</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Sassami Aurora -->
+        <article class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Açougue</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-0.5 rounded-md">17.47% OFF</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-1">Item da Lista: Peito de frango</p>
+            <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2">Filezinho de Frango Sassami Aurora</h3>
+            <p class="text-sm text-slate-500 mb-4">Pacote 1kg</p>
+          </div>
+          <div class="bg-slate-50 border-t border-slate-100 p-6 flex items-baseline justify-between mt-auto">
+            <div>
+              <span class="text-xs text-slate-400 line-through block">R$ 22,90</span>
+              <span class="text-xs text-slate-500 font-medium">Preço Normal</span>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-extrabold text-red-600">R$ 18,90</span>
+              <span class="text-xs text-emerald-600 font-semibold block">Clube Amigo Giassi</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Sobrecoxa de Frango -->
+        <article class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Açougue</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-0.5 rounded-md">28.20% OFF</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-1">Item da Lista: Sobrecoxa</p>
+            <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2">Sobrecoxa de Frango Pássaro Branco</h3>
+            <p class="text-sm text-slate-500 mb-4">Com Osso/Pele - Pacote 1kg</p>
+          </div>
+          <div class="bg-slate-50 border-t border-slate-100 p-6 flex items-baseline justify-between mt-auto">
+            <div>
+              <span class="text-xs text-slate-400 line-through block">R$ 13,90</span>
+              <span class="text-xs text-slate-500 font-medium">Preço Normal</span>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-extrabold text-red-600">R$ 9,98</span>
+              <span class="text-xs text-emerald-600 font-semibold block">Clube Amigo Giassi</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Mandioca / Aipim -->
+        <article class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Hortifruti</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-0.5 rounded-md">22.27% OFF</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-1">Item da Lista: Mandioca</p>
+            <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2">Aipim Descascado</h3>
+            <p class="text-sm text-slate-500 mb-4">Pacote 1kg</p>
+          </div>
+          <div class="bg-slate-50 border-t border-slate-100 p-6 flex items-baseline justify-between mt-auto">
+            <div>
+              <span class="text-xs text-slate-400 line-through block">R$ 8,98</span>
+              <span class="text-xs text-slate-500 font-medium">Preço Normal</span>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-extrabold text-red-600">R$ 6,98</span>
+              <span class="text-xs text-emerald-600 font-semibold block">Clube Amigo Giassi</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Cenoura -->
+        <article class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Hortifruti</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-0.5 rounded-md">50.08% OFF</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-1">Item da Lista: Cenouras</p>
+            <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2">Cenoura</h3>
+            <p class="text-sm text-slate-500 mb-4">Quilo (kg)</p>
+          </div>
+          <div class="bg-slate-50 border-t border-slate-100 p-6 flex items-baseline justify-between mt-auto">
+            <div>
+              <span class="text-xs text-slate-400 line-through block">R$ 5,99</span>
+              <span class="text-xs text-slate-500 font-medium">Preço Normal</span>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-extrabold text-red-600">R$ 2,99</span>
+              <span class="text-xs text-emerald-600 font-semibold block">Clube Amigo Giassi</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Cebola -->
+        <article class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Hortifruti</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-0.5 rounded-md">28.61% OFF</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-1">Item da Lista: Cebolas</p>
+            <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2">Cebola</h3>
+            <p class="text-sm text-slate-500 mb-4">Quilo (kg)</p>
+          </div>
+          <div class="bg-slate-50 border-t border-slate-100 p-6 flex items-baseline justify-between mt-auto">
+            <div>
+              <span class="text-xs text-slate-400 line-through block">R$ 6,99</span>
+              <span class="text-xs text-slate-500 font-medium">Preço Normal</span>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-extrabold text-red-600">R$ 4,99</span>
+              <span class="text-xs text-emerald-600 font-semibold block">Clube Amigo Giassi</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Molho de Tomate -->
+        <article class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Mercearia</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-0.5 rounded-md">30.15% OFF</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-1">Item da Lista: Molho de tomate</p>
+            <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2">Molho de Tomate Tradicional Fugini</h3>
+            <p class="text-sm text-slate-500 mb-4">Sachê 300g</p>
+          </div>
+          <div class="bg-slate-50 border-t border-slate-100 p-6 flex items-baseline justify-between mt-auto">
+            <div>
+              <span class="text-xs text-slate-400 line-through block">R$ 1,99</span>
+              <span class="text-xs text-slate-500 font-medium">Preço Normal</span>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-extrabold text-red-600">R$ 1,39</span>
+              <span class="text-xs text-emerald-600 font-semibold block">Clube Amigo Giassi</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Creme de Leite -->
+        <article class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Mercearia</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-0.5 rounded-md">18.24% OFF</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-1">Item da Lista: Creme de leite</p>
+            <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2">Creme de Leite Lecomte</h3>
+            <p class="text-sm text-slate-500 mb-4">TP 200g</p>
+          </div>
+          <div class="bg-slate-50 border-t border-slate-100 p-6 flex items-baseline justify-between mt-auto">
+            <div>
+              <span class="text-xs text-slate-400 line-through block">R$ 3,29</span>
+              <span class="text-xs text-slate-500 font-medium">Preço Normal</span>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-extrabold text-red-600">R$ 2,69</span>
+              <span class="text-xs text-emerald-600 font-semibold block">Clube Amigo Giassi</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. Extrato de Tomate -->
+        <article class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Mercearia</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-0.5 rounded-md">21.46% OFF</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-1">Item da Lista: Extrato de tomate Elefante</p>
+            <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2">Extrato de Tomate Elefante</h3>
+            <p class="text-sm text-slate-500 mb-4">Pote 310g</p>
+          </div>
+          <div class="bg-slate-50 border-t border-slate-100 p-6 flex items-baseline justify-between mt-auto">
+            <div>
+              <span class="text-xs text-slate-400 line-through block">R$ 6,99</span>
+              <span class="text-xs text-slate-500 font-medium">Preço Normal</span>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-extrabold text-red-600">R$ 5,49</span>
+              <span class="text-xs text-emerald-600 font-semibold block">Clube Amigo Giassi</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </main>
+
+    <!-- Footer Info -->
+    <footer class="mt-8 bg-white rounded-2xl border border-slate-200/80 p-6 text-center text-slate-500 text-xs">
+      <p>Exibindo todos os 10 itens correlacionados da sua Lista de Marmitas presentes no folheto do Giassi Supermercados.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
